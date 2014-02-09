@@ -12,7 +12,7 @@ echo "Downloading the SDK, x64"
 ## STABLE VERSION. COMMENT FOR DEV VERSION.
 wget http://storage.googleapis.com/dart-archive/channels/stable/release/latest/sdk/dartsdk-linux-x64-release.zip
 
-## UNCOMMENT FOR DEV VERSION
+# UNCOMMENT FOR DEV VERSION
 # wget http://storage.googleapis.com/dart-archive/channels/dev/release/latest/sdk/dartsdk-linux-x64-release.zip
 
 echo "Downloading done."

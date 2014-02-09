@@ -1,7 +1,7 @@
 #!/bin/bash
 
-## Try and get debian operating system
-## id, codename, and release
+# Try and get debian operating system
+# id, codename, and release
 
 TYPE=$(echo "$1" | tr '[A-Z]' '[a-z]')
 OS=$(uname)

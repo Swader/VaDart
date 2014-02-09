@@ -7,7 +7,6 @@
 #
 locations=("/vagrant/sample_apps/*:/home/vagrant/dartapps/")
 
-
 ## DO NOT TOUCH BELOW UNLESS YOU KNOW WHAT YOU'RE DOING
 ########################################################
 for combination in "${locations[@]}" ; do

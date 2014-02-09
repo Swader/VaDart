@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 OS=$(/bin/bash /vagrant/shell/os-detect.sh ID)
 CODENAME=$(/bin/bash /vagrant/shell/os-detect.sh CODENAME)
 
