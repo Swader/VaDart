@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 OS=$(/bin/bash /vagrant/shell/os-detect.sh ID)
 CODENAME=$(/bin/bash /vagrant/shell/os-detect.sh CODENAME)
 
@@ -26,7 +27,7 @@ echo "Commenting out bind-address to make MySQL accept remote connections."
 sed -i 's/bind-address/#bind-address/g' /etc/mysql/my.cnf
 
 echo "Adding a root user for remote connections"
-cat /vagrant/shell/install-mysql.sql | mysql -u root -proot 
+cat /vagrant/shell/install-mysql.sql | mysql -u root -proot
 service mysql restart
 
 # Above code partially grabbed from https://github.com/fideloper/Vaprobash/blob/master/scripts/mysql.sh
