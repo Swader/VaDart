@@ -44,3 +44,5 @@ packages/*
 # Vagrant
 .vagrant
 .vagrant/*
+
+sample_apps

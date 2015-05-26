@@ -9,8 +9,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
+
+  ########################### TESTED WITH THE FOLLOWING VM's ###########################
+  # UBUNTU
   config.vm.box = "precise64"
   config.vm.box_url = "http://box.puphpet.com/ubuntu-precise12042-x64-vbox43.box"
+
+  # CENTOS
+  # config.vm.box = "opscode-centos-6.5"
+  # config.vm.box_url =
+  #   'http://opscode-vm-bento.s3.amazonaws.com' \
+  #   '/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box'
 
   config.vm.network "private_network", ip: "192.168.56.101"
 
