@@ -32,7 +32,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   ### PROVISIONING WITH SHELL
   config.vm.provision :shell, :path => "shell/initial-setup.sh"
   config.vm.provision :shell, :path => "https://raw.github.com/fideloper/Vaprobash/master/scripts/base.sh"
-  config.vm.provision :shell, :path => "shell/initial-setup.sh"
   config.vm.provision :shell, :path => "shell/install-mysql.sh"
   config.vm.provision :shell, :path => "shell/install-dart-sdk.sh"
   ###########################
